@@ -18,9 +18,9 @@ _last_fetch_time = 0
 
 FREE_PROXY_SOURCES = [
     # GeoNode free Indian proxies
-    "https://proxylist.geonode.com/api/proxy-list?limit=100&page=1&country=IN&protocols=http%2Chttps&filterUpTime=50&speed=fast",
+    "http://y0ou1c7x08gc_country-in:7yj5AsTEdVt4OLe4@vr2-resi.proxy.arealproxy.com:1337",
     # ProxyScrape Indian proxies
-    "https://api.proxyscrape.com/v3/free-proxy-list/get?request=displayproxies&country=in&protocol=http&anonymity=elite,anonymous&timeout=5000",
+    "http://y0ou1c7x08gc_country-in:7yj5AsTEdVt4OLe4@vr2-resi.proxy.arealproxy.com:1337",
 ]
 
 def _fetch_proxy_list():
