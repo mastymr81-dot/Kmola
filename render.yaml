@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: aadhar-download-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    healthCheckPath: /health
+
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+
+      - key: ADMIN_IDS
+        sync: false
+
+      - key: ADMIN_PASSWORD_B64
+        sync: false
+
+      - key: DEVELOPER_USERNAME
+        value: alexateam1122
+
+      - key: UPI_ID
+        sync: false
+
+      - key: UPI_PRICE_PER_CREDIT
+        value: "10"
+
+      - key: UPI_CREDITS_PER_PAYMENT
+        value: "5"
+
+      - key: CREDIT_EXPIRY_DAYS
+        value: "30"
+
+      - key: REQUIRED_CHANNEL_IDS
+        sync: false
+
+      - key: PYTHONIOENCODING
+        value: utf-8
+
+      - key: PORT
+        value: "10000"
